@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <title>Nachum Getzel Elkind Resume</title>
+    <style>
+@page {
+    size: auto;
+    margin: 0;
+}
+
+@media print {
+    @page {
+        size: auto;
+        margin: 0.5in; /* Minimal margins */
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Hide UI elements */
+    .download-btn, .no-print {
+        display: none !important;
+    }
+}
+
+.button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    z-index: 9999;
+}
+
+.download-btn {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.printable-btn {
+    background-color: #2196F3; /* Blue for printable */
+}
+
+.printable-btn:hover {
+    background-color: #1976D2;
+}
+
+.pdf-btn {
+    background-color: #4CAF50; /* Green for PDF */
+}
+
+.pdf-btn:hover {
+    background-color: #45a049;
+}
+
+/* Hide buttons during print */
+@media print {
+    .button-container {
+        display: none !important;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .download-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    max-width: 100%;      /* Never exceed viewport width */
+    width: auto;          /* Allow width to adapt */
+    margin: 0 10px;       /* Center content */
+    padding: 2rem;        /* Responsive padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/*
+.download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+*/
+
+/* For sections/containers */
+.container, section {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin: 10px 0 20px 0;
+    font-weight: normal;
+}
+
+.contact {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    margin: 2em 0;
+    padding-left: 1em;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.7em;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------
+   Additions for the 2026-08-25 canonical-resume sections (experience groups,
+   what-i-bring, languages), styled in the SAME idiom as the rules above — this
+   file is delkind's original resume stylesheet (the user's preferred, more
+   readable design; byte-identical copies live in father_Dad/ and the resume
+   repo), and these rules only extend it to the new section shapes. The text
+   itself is the canonical (5) resume; only the web clothing is delkind's. */
+
+.tagline {
+    /* Same voice as his h2 subtitle: green, light, roomy. */
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin: 10px 0 10px 0;
+    font-weight: normal;
+}
+
+.contact-line {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.contact-line a { color: #4CAF50; }
+
+.role-line { margin: 0 0 0.5em 0; }
+.role-line .role { font-weight: bold; }
+.role-line .dates { color: #555; font-style: italic; }
+.sep { color: #999; }
+
+h4.group {
+    color: #333;
+    margin: 1em 0 0.4em 0;
+    font-size: 1.05em;
+}
+
+/* The new bullet lists follow his plain list style, not a custom glyph. */
+ul.bullets { list-style: disc; padding-left: 20px; margin: 0 0 0.7em 0; }
+ul.bullets li { padding-left: 0; position: static; margin-bottom: 0.7em; }
+ul.bullets li::before { content: none; }
+ul.bullets li .lead { font-weight: bold; }
+
+.stack-line { margin-top: 0.5em; }
+
+.bring-item { margin-bottom: 0.7em; }
+.bring-item .term { font-weight: bold; }
+
+.project { margin-bottom: 1em; }
+.project-title { margin-bottom: 0.3em; }
+.project-title .name { font-weight: bold; }
+.project-title .tech { color: #555; font-style: italic; }
+
+.edu { margin-bottom: 0.8em; }
+.edu-line { margin-bottom: 0.3em; }
+.edu-line .name { font-weight: bold; }
+.edu-line .dates { color: #555; font-style: italic; }
+
+.languages-line { margin: 0; }
+
+/* A title line's own text sits right under it (the 2026-09-27 layout). */
+.edu-line + p, .project > .role-line + p { margin-top: 0; }
+
+/* Readable line length on large screens; his original let text run full-width. */
+body { max-width: 950px; margin: 0 auto; }
+
+/* ------------------------------------------------------------------------------
+   Compact print overrides for the v2 draft: the web layout above prints airy
+   (4 pages); these bring the PDF to ~2 pages without touching the screen look. */
+@media print {
+  body { font-size: 12px; line-height: 1.35; padding: 0; max-width: 100%; }
+  h1 { font-size: 1.9em; }
+  .tagline, h2 { font-size: 1.15em; margin: 4px 0; }
+  header { padding-bottom: 6px; margin-bottom: 8px; }
+  section { margin-bottom: 9px; }
+  h3 { margin: 8px 0 5px 0; padding-bottom: 2px; }
+  h4.group { margin: 0.5em 0 0.25em 0; }
+  li, ul.bullets li, .bring-item { margin-bottom: 0.4em; }
+  .project { margin-bottom: 0.5em; }
+  .edu { margin-bottom: 0.5em; }
+}
+
+/* ------------------------------------------------------------------------------
+   2026-09-28 layout (matches the published PDF): dates right-aligned on title
+   lines, org/tech in grey, an availability line under the contact lines. */
+.role-line, .edu-line { display: flex; flex-wrap: wrap; gap: 0 0.35em; align-items: baseline; }
+.role-line .dates, .edu-line .dates { margin-left: auto; }
+.role-line .org, .edu-line .org { color: #555; }
+.project-title .tech { font-style: normal; }
+.availability { font-size: 0.9em; color: #333; }
+.other-projects { color: #555; }
+.other-projects strong { color: #333; }
+
+/* One-page print (2026-09-28): matches the spacing of the hand-approved PDF. */
+@media print {
+  header { padding-bottom: 2px; margin-bottom: 4px; }
+  .contact-line, .availability { margin-bottom: 1px; }
+  h3 { margin: 6px 0 4px 0; }
+  li, ul.bullets li, .bring-item { margin-bottom: 0.1em; }
+  ul.bullets { margin-bottom: 0.3em; }
+  .role-line, .project-title, .edu-line { margin-bottom: 0.15em; }
+  p { margin: 0.25em 0; }
+  .project { margin-bottom: 0.3em; }
+  .edu { margin-bottom: 0.3em; }
+}
+
+    </style>
+</head>
+<body>
+<div class="button-container">
+    <a href="resume.pdf" class="download-btn pdf-btn" target="_blank" rel="noopener noreferrer" aria-label="View PDF">View PDF</a>
+</div>
+<header>
+    <h1>Nachum Getzel Elkind</h1>
+    <div class="tagline">LLM Agent Developer · Python · Backend · Security</div>
+    <div class="contact-line">+972 54-595-5698 &middot; <a href="mailto:nachumgetzel.elkind@gmail.com">nachumgetzel.elkind@gmail.com</a> &middot; Beit Shemesh, Israel
+    </div>
+    <div class="contact-line"><a href="https://ngelkind.github.io/resume">ngelkind.github.io/resume</a> &middot; <a href="https://github.com/ngelkind">github.com/ngelkind</a> &middot; <a href="https://www.linkedin.com/in/nachum-getzel-elkind-b072102b7">linkedin.com/in/nachum-getzel-elkind-b072102b7</a>
+    </div>
+    <div class="availability">Available now through at least summer 2028 (IDF service deferred by one year) · on-site in Israel or remote.</div>
+</header>
+<section>
+    <h3>Summary</h3>
+    <p>Python developer building LLM agents since 2023. At XM Cyber: sole developer of an LLM system that audits customers' attack-path configurations; also shipped two AI agents into the product. C, assembly and security background from Magshimim.</p>
+</section>
+<section>
+    <h3 class="section">Experience</h3>
+    <p class="role-line"><span class="role">AI Solution Developer</span> <span class="sep">|</span> <span class="org">XM Cyber, Tel Aviv (IP acquired by CrowdStrike, 2026)</span> <span class="dates">April 2026 – Present</span></p>
+    <ul class="bullets">
+        <li>Sole developer of an LLM system that audits the attack scenarios in a customer's environment, flags broken, redundant, misnamed or empty ones, and writes remediation advice. Scoped it from a one-line problem (customer scenarios go stale over time) to a working proof of concept; now moving it into the production codebase.</li>
+        <li>Tool-calling loop over a SQLite index of the customer's entities, with the read-only query tools also served over MCP. Queries the index can't evaluate return "unknown" instead of 0.</li>
+        <li>Each claim in the model's advice is checked against platform data, a claim that fails after one revision becomes generic text, and report numbers are computed in code. Customer data comes from the XM Cyber platform API through read-only calls; the system only advises and never writes customer data.</li>
+        <li>Evaluation harness with ground-truth labels, A/B runs and an LLM judge; high-confidence findings reach ~88% precision. A 25-run cross-model benchmark found no significant difference between models.</li>
+        <li>Wrote the anonymization layer that lets customer data reach an LLM. Identifiers become stable pseudonyms, and the run aborts if a known name still leaks.</li>
+        <li>Wrote 16 detectors (6 LLM-backed, 10 deterministic) and ~1,100 tests, including a regression test for every false positive found in review. Also built the separate data pipeline that produces the system's tenant caches and entity inventory.</li>
+        <li>Shipped two AI agents into the XM Cyber product.</li>
+    </ul>
+    <p class="stack-line"><strong>Stack:</strong> Python (asyncio, httpx, Pydantic, pytest), SQLite, MCP, LLM APIs, C, Git, Bash</p>
+</section>
+<section>
+    <h3 class="section">Projects</h3><div class="project">
+        <p class="project-title"><span class="name">Archon</span> <span class="sep">|</span> <span class="tech">personal assistant agent over WhatsApp, Telegram, Gmail and Google Calendar (Python, ~8,900 lines)</span></p>
+        <ul class="bullets">
+            <li>Every outgoing message, email and calendar edit waits for approval in Telegram. The 78 tools sit in a scope-filtered registry that hides privileged ones from the model unless the chat's policy allows them.</li>
+            <li>One interface over five LLM backends (Anthropic, OpenAI, OpenRouter, Gemini and a sandboxed Claude Code subprocess), with per-call cost tracking and a daily budget cap.</li>
+            <li>Eight subsystems run as supervised asyncio tasks that restart with backoff. Deployed on a systemd-sandboxed VM with no inbound ports and an egress monitor; CI blocks deploys when tests fail.</li>
+        </ul>
+    </div><div class="project">
+        <p class="project-title"><span class="name">CVE-Sentinel</span> <span class="sep">|</span> <span class="tech">vulnerability intelligence service (Python, FastAPI, SQLAlchemy)</span></p>
+        <ul class="bullets">
+            <li>Pulls NVD, CISA KEV and ExploitDB data into SQLite and sends Telegram and WebSocket alerts on high-risk CVEs. Adding an agent that answers questions about the data through an MCP-based SQL tool.</li>
+        </ul>
+    </div>
+    <p class="other-projects"><strong>Other projects:</strong> ARM64 OS kernel from scratch (current Magshimim final project; C, AArch64, QEMU in Docker, CI); earlier LLM bots for Telegram and WhatsApp, and a ChatGPT Chrome extension.</p>
+</section>
+<section>
+    <h3 class="section">Skills</h3>
+    <div class="bring-item"><span class="term">LLM & agents:</span> tool/function calling, MCP, structured output, evals, output verification, human-in-the-loop approval; Claude, OpenAI, Gemini and OpenRouter APIs</div>
+    <div class="bring-item"><span class="term">Backend & data:</span> Python (asyncio, httpx, Pydantic, pytest), FastAPI, REST API integrations (OAuth, retries, rate limits), SQL (SQLite, SQLAlchemy), JavaScript/Node.js</div>
+    <div class="bring-item"><span class="term">Infrastructure:</span> Docker, GitHub Actions CI/CD, Git, Linux, systemd</div>
+    <div class="bring-item"><span class="term">Low-level & security:</span> C, C++, x86 and AArch64 assembly, IDA Pro, Wireshark</div>
+    <div class="bring-item"><span class="term">Languages:</span> Hebrew and Russian (native), English (fluent, used daily at work)</div>
+</section>
+<section>
+    <h3 class="section">Education</h3><div class="edu">
+        <p class="edu-line"><span class="name">Magshimim National Cyber Program</span> <span class="sep">|</span> <span class="org">Israel National Cyber Directorate, Magshimim Plus track</span> <span class="dates">2024 – Present</span></p>
+        <p>Selective national program in cyber security. Year averages 97.5 and 99.7; reached the national CTF stage.</p>
+    </div><div class="edu">
+        <p class="edu-line"><span class="name">The Open University of Israel</span> <span class="sep">|</span> <span class="org">Academy in High School program</span></p>
+        <p>Accepted to the B.Sc. Computer Science track; completed a first-year mathematics course.</p>
+    </div><div class="edu">
+        <p class="edu-line"><span class="name">High School Diploma</span> <span class="sep">|</span> <span class="org">Excellence track, average 95+; 5 units in CS (100), Math, Physics, English, Russian</span> <span class="dates">Expected 2027</span></p>
+    </div>
+</section>
+</body>
+</html>
